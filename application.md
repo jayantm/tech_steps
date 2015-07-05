@@ -16,7 +16,6 @@
     * Archetype: maven-archetype-webapp
     * GroupId: com.test
     * ArtifactId: restex
-* Folder Structure
 * Update Web Descriptor File (web.xml)
 ```xml
 <web-app xmlns="http://java.sun.com/xml/ns/javaee"
@@ -129,6 +128,25 @@ public class HelloWS {
 		<url-pattern>/api/*</url-pattern>
 	</servlet-mapping>
 </web-app>
+```
+* Folder Structure
+```sh
+$ tree .
+restex/
+|-- pom.xml
+|-- src
+|   `-- main
+|       |-- java
+|       |   `-- com
+|       |       `-- test
+|       |           `-- restex
+|       |               |-- Application.java
+|       |               `-- HelloWS.java
+|       |-- resources
+|       `-- webapp
+|           |-- index.jsp
+|           `-- WEB-INF
+|               `-- web.xml
 ```
 * Build/Compile
 ```sh
